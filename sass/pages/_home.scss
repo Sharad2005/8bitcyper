@@ -1,0 +1,26 @@
+.heading-secondary{
+    background-color:$colour-primary ;
+    padding: 25rem 0;
+    margin-top:-20vh;
+}
+.section-features {
+    // margin-top: 25rem;
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($colour-primaryred, 0.8),
+        rgba($colour-primaryblue, 0.8)),
+    url(../img/R92f15206673a98da8465eb1831e521e5.png);
+    background-size: cover;
+    transform:skewY(-7deg) ;
+    margin-top: 10rem;
+    & > *{
+        transform:skewY(7deg) 
+    }
+}
+
+.tours{
+    background-color: $colour-grey-light-1;
+padding:  25rem 0 50rem 0;
+margin-top: -10rem;
+}

@@ -1,0 +1,75 @@
+.btn:link,.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;   
+    font-family: "lato";
+    padding:1rem 3.5rem ;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: all .2s;
+    margin-top: 2rem;
+    position: relative;
+    
+}
+.btn:hover{
+    transform:translatey(-3px) ;
+    box-shadow: 0 1rem 2rem ($colour-primaryblack);
+
+}
+.bth:active{
+    transform: translate(-1px);
+    box-shadow: 0 .5rem 1rem ($colour-primaryblack);
+}
+.btn-white{
+    background-color: $colour-primarywhite;
+    color: $colour-primary;
+
+}
+.btn-red{
+    background-color: $colour-primary-mediam;
+    color: $colour-primarywhite;
+
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    
+}
+.btn-white::after{
+    background-color: ($colour-primarywhite);
+}
+.btn:hover::after{
+    transform: scaleX(1.4)
+    scaleY(1.6);
+    opacity: 0;
+}
+.btn-animated{
+    animation: moveIn 1 ease-out .75s;
+}
+.btn-text{
+
+     &:link,&:visited{
+         font-size: 1.6rem;
+         color: $colour-primary-light;
+         display: inline-block;
+         text-decoration: none;
+         border-bottom: 1px solid $colour-primary-light;
+         padding: 3px ;
+     }
+     &:hover{
+         background-color: $colour-primary-light;
+         color:$colour-primarywhite;
+         box-shadow: 0 1rem 2rem rgba($colour-primaryblack, .15);
+     }
+     &:active{
+         box-shadow: 0 .5rem 1rem rgba($colour-primaryblack, .15);
+         transform: translateY(0);
+     }
+}

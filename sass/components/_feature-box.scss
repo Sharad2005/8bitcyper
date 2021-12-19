@@ -1,0 +1,28 @@
+.feature-box{
+   background-color: rgba($colour-primarywhite, .8);
+   font-size: 1rem;
+   padding: 2rem;
+   padding-left: .2rem;
+   margin-left: .2rem;
+   text-align: center;
+   border-radius: 0 1.5rem 5rem rgba($colour-primaryblack, .15);
+   float: left;
+   font-family: "lato";
+   transition: transform .3s;
+
+    &__icon{
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image:linear-gradient(to right ,$colour-primary-light ,$colour-primary-mediam);
+    -webkit-background-clip: text;
+    color: transparent;
+      
+    }
+    &__text{
+    }
+    &:hover{
+        transform: translatey(-1.5rem) scale(1.03);
+    }
+}
+  

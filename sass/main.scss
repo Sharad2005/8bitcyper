@@ -1,0 +1,44 @@
+
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "layout/header";
+@import "layout/grid";
+
+
+@import "pages/home";
+
+// html{
+
+//     @media (max-width: 750px) { font-size: 30%; background-size: 20%;
+//     } 
+//   }
+  // html{
+  //   @media (max-width: 900px) { font-size: 40%; background-size: 30%;
+      
+  //   }
+  // }
+  // html{
+  //   @media (max-width: 1200px) { font-size: 80%; background-size: 80%;
+      
+  //   }
+  // }
+  // html{
+  //   @media (max-width: 1800px) { font-size: 100%; background-size: 100%;
+      
+  //   }   
+  // }
+
+  
